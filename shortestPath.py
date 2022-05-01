@@ -2,6 +2,15 @@ import csv
 import numpy as np
 import  pandas as pd
 
+"""
+hz_data.txt:
+4
+1-1号线 56 55 54 53 52 78 51 0 50 49 74 77 48 47 46 11 45 44 43 42 33 41 40 39 38 36 35 34 
+1-2号线 33 32 31 30 1 29 28
+2号线 12 13 67 5 9 14 68 69 10 70 71 72 15 73 74 3 2 16 4 17 18 19 75 20 21 22 23 24 25 26 27 76
+4号线 45 11 57 58 59 17 60 79 61 78 62 63 8 6 64 65 7 66
+"""
+
 def read_data(file_name):
     data=dict()
     with open(file_name, "rt", encoding="utf-8") as file:
